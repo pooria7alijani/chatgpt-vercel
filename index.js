@@ -8,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-const OPENAI_API_KEY = "sk-..."; // 👈 کلید API خودتو اینجا وارد کن
+const OPENAI_API_KEY = "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"; // 👈 کلید API خودتو اینجا وارد کن
 
 app.post("/chat", async (req, res) => {
   const userMessage = req.body.message;
